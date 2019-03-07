@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "Home"
+    url: /index
+  - title: "Download"
+    url: /download
+  - title: "Getting Started"
+    url: /getting-started
+  - title: "Documentation"
+    url: /documentation
+  - title: "Gallery"
+    url: /examples

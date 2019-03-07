@@ -1,0 +1,62 @@
+{
+  "nodes": [
+    {
+      "category": [
+        "Custom",
+        "example_custom_module"
+      ],
+      "title": {
+        "name": "example_custom_module.GetScanInfo",
+        "web_url": "",
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Custom interface wrapping function GetScanInfo",
+            "argument": {
+              "name": "example_custom_module.GetScanInfo",
+              "import": "import example_custom_module"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Custom, example_custom_module"
+            }
+          }
+        ]
+      },
+      "ports": [
+        {
+          "input": true,
+          "output": false,
+          "visible": true,
+          "editable": true,
+          "name": "in_file",
+          "code": [
+            {
+              "language": "Nipype",
+              "argument": {
+                "name": "in_file"
+              }
+            }
+          ]
+        },
+        {
+          "input": false,
+          "output": true,
+          "visible": true,
+          "editable": false,
+          "name": "TR",
+          "code": [
+            {
+              "language": "Nipype",
+              "argument": {
+                "name": "TR"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

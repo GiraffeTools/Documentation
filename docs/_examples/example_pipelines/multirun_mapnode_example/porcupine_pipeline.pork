@@ -1,0 +1,1290 @@
+{
+    "links": [
+        {
+            "from": "2990430",
+            "to": "1ca97c0"
+        },
+        {
+            "from": "2bed7f0",
+            "to": "1667c50"
+        },
+        {
+            "from": "2990430",
+            "to": "11e89d0"
+        },
+        {
+            "from": "1798b10",
+            "to": "195fca0"
+        },
+        {
+            "from": "48f0720",
+            "to": "2b8f830"
+        }
+    ],
+    "nodes": [
+        {
+            "category": [
+                "Nipype",
+                "utility",
+                "base"
+            ],
+            "ports": [
+                {
+                    "base": "",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "sub_id"
+                            },
+                            "comment": "",
+                            "language": "Docker"
+                        },
+                        {
+                            "argument": {
+                                "name": "sub_id"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 1,
+                    "input": true,
+                    "inputPort": "190b7c0",
+                    "iterator": true,
+                    "name": "sub_id",
+                    "output": true,
+                    "outputPort": "2990430",
+                    "value": "['sub-01', 'sub-02']",
+                    "visible": true
+                },
+                {
+                    "base": "",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "run_id"
+                            },
+                            "comment": "",
+                            "language": "Docker"
+                        },
+                        {
+                            "argument": {
+                                "name": "run_id"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 2,
+                    "input": true,
+                    "inputPort": "1ce9420",
+                    "iterator": false,
+                    "name": "run_id",
+                    "output": true,
+                    "outputPort": "2bed7f0",
+                    "value": "['run-1', 'run-2']",
+                    "visible": true
+                }
+            ],
+            "position": [
+                -599,
+                108
+            ],
+            "title": {
+                "code": [
+                    {
+                        "argument": {
+                            "import": "import nipype.interfaces.utility as utility",
+                            "name": "utility.IdentityInterface()"
+                        },
+                        "comment": "Basic interface class generates identity mappings",
+                        "language": "Nipype"
+                    },
+                    {
+                        "argument": {
+                            "name": "Nipype, utility"
+                        },
+                        "language": "Docker"
+                    }
+                ],
+                "name": "utility.IdentityInterface",
+                "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.utility/base.html#identityinterface"
+            }
+        },
+        {
+            "category": [
+                "Nipype",
+                "io"
+            ],
+            "ports": [
+                {
+                    "base": "func",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "func"
+                            },
+                            "comment": "",
+                            "language": "Docker"
+                        },
+                        {
+                            "argument": {
+                                "name": "func"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 0,
+                    "input": false,
+                    "inputPort": "0",
+                    "iterator": false,
+                    "name": "func",
+                    "output": true,
+                    "outputPort": "1798b10",
+                    "value": "",
+                    "visible": true
+                },
+                {
+                    "base": "bucket",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "bucket"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 1,
+                    "input": true,
+                    "inputPort": "2bee6e0",
+                    "iterator": false,
+                    "name": "bucket",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "'openneuro'",
+                    "visible": true
+                },
+                {
+                    "base": "sort_filelist",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "sort_filelist"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 2,
+                    "input": true,
+                    "inputPort": "1b23d10",
+                    "iterator": false,
+                    "name": "sort_filelist",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "True",
+                    "visible": true
+                },
+                {
+                    "base": "template",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "template"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 3,
+                    "input": true,
+                    "inputPort": "1e9f350",
+                    "iterator": false,
+                    "name": "template",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "'%s/func/%s_task-simon_%s_bold.nii.gz'",
+                    "visible": true
+                },
+                {
+                    "base": "anon",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "anon"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 4,
+                    "input": true,
+                    "inputPort": "18f69f0",
+                    "iterator": false,
+                    "name": "anon",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "True",
+                    "visible": true
+                },
+                {
+                    "base": "region",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "region"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 5,
+                    "input": true,
+                    "inputPort": "173a410",
+                    "iterator": false,
+                    "name": "region",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "bucket_path",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "bucket_path"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 6,
+                    "input": true,
+                    "inputPort": "163ff70",
+                    "iterator": false,
+                    "name": "bucket_path",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "'ds000101/ds000101_R2.0.0/uncompressed/'",
+                    "visible": true
+                },
+                {
+                    "base": "local_directory",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "local_directory"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 7,
+                    "input": true,
+                    "inputPort": "1617520",
+                    "iterator": false,
+                    "name": "local_directory",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "'/tmp'",
+                    "visible": true
+                },
+                {
+                    "base": "raise_on_empty",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "raise_on_empty"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 8,
+                    "input": true,
+                    "inputPort": "200bbb0",
+                    "iterator": false,
+                    "name": "raise_on_empty",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "template_args",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "template_args"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 9,
+                    "input": true,
+                    "inputPort": "16e87f0",
+                    "iterator": false,
+                    "name": "template_args",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "dict(func=[['sub_id', 'sub_id', 'run_id']])",
+                    "visible": true
+                },
+                {
+                    "base": "ignore_exception",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "ignore_exception"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 10,
+                    "input": true,
+                    "inputPort": "1e7f340",
+                    "iterator": false,
+                    "name": "ignore_exception",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "sub_id"
+                            },
+                            "comment": "",
+                            "language": "Docker"
+                        },
+                        {
+                            "argument": {
+                                "name": "sub_id"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 11,
+                    "input": true,
+                    "inputPort": "11e89d0",
+                    "iterator": false,
+                    "name": "sub_id",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": true
+                },
+                {
+                    "base": "",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "run_id"
+                            },
+                            "comment": "",
+                            "language": "Docker"
+                        },
+                        {
+                            "argument": {
+                                "name": "run_id"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 12,
+                    "input": true,
+                    "inputPort": "1667c50",
+                    "iterator": false,
+                    "name": "run_id",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": true
+                }
+            ],
+            "position": [
+                -333,
+                -121
+            ],
+            "title": {
+                "code": [
+                    {
+                        "argument": {
+                            "import": "import nipype.interfaces.io as io",
+                            "name": "io.S3DataGrabber()"
+                        },
+                        "comment": "Generic datagrabber module that wraps around glob in an",
+                        "language": "Nipype"
+                    },
+                    {
+                        "argument": {
+                            "name": "Nipype, io"
+                        },
+                        "language": "Docker"
+                    }
+                ],
+                "name": "io.S3DataGrabber",
+                "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
+            }
+        },
+        {
+            "category": [
+                "Nipype",
+                "afni",
+                "preprocess"
+            ],
+            "ports": [
+                {
+                    "base": "in_file",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "in_file"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 1,
+                    "input": true,
+                    "inputPort": "195fca0",
+                    "iterator": true,
+                    "name": "in_file",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": true
+                },
+                {
+                    "base": "out_file",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "out_file"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 2,
+                    "input": true,
+                    "inputPort": "18f3d20",
+                    "iterator": false,
+                    "name": "out_file",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "basefile",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "basefile"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 3,
+                    "input": true,
+                    "inputPort": "16434d0",
+                    "iterator": false,
+                    "name": "basefile",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "zpad",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "zpad"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 4,
+                    "input": true,
+                    "inputPort": "4905670",
+                    "iterator": false,
+                    "name": "zpad",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "md1d_file",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "md1d_file"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 5,
+                    "input": true,
+                    "inputPort": "48dc4c0",
+                    "iterator": false,
+                    "name": "md1d_file",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "oned_file",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "oned_file"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 6,
+                    "input": true,
+                    "inputPort": "2604750",
+                    "iterator": false,
+                    "name": "oned_file",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "verbose",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "verbose"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 7,
+                    "input": true,
+                    "inputPort": "2008300",
+                    "iterator": false,
+                    "name": "verbose",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "timeshift",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "timeshift"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 8,
+                    "input": true,
+                    "inputPort": "2bbecd0",
+                    "iterator": false,
+                    "name": "timeshift",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "copyorigin",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "copyorigin"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 9,
+                    "input": true,
+                    "inputPort": "19d3240",
+                    "iterator": false,
+                    "name": "copyorigin",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "oned_matrix_save",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "oned_matrix_save"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 10,
+                    "input": true,
+                    "inputPort": "2bea640",
+                    "iterator": false,
+                    "name": "oned_matrix_save",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "outputtype",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "outputtype"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 11,
+                    "input": true,
+                    "inputPort": "e07c80",
+                    "iterator": false,
+                    "name": "outputtype",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "'NIFTI_GZ'",
+                    "visible": true
+                },
+                {
+                    "base": "args",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "args"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 12,
+                    "input": true,
+                    "inputPort": "18bb920",
+                    "iterator": false,
+                    "name": "args",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "environ",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "environ"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 13,
+                    "input": true,
+                    "inputPort": "1beb600",
+                    "iterator": false,
+                    "name": "environ",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "terminal_output",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "terminal_output"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 14,
+                    "input": true,
+                    "inputPort": "1bf7770",
+                    "iterator": false,
+                    "name": "terminal_output",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "ignore_exception",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "ignore_exception"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 15,
+                    "input": true,
+                    "inputPort": "1d06fe0",
+                    "iterator": false,
+                    "name": "ignore_exception",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "out_file",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "out_file"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": false,
+                    "id": 16,
+                    "input": false,
+                    "inputPort": "0",
+                    "iterator": false,
+                    "name": "out_file",
+                    "output": true,
+                    "outputPort": "2bec260",
+                    "value": "",
+                    "visible": true
+                },
+                {
+                    "base": "md1d_file",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "md1d_file"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": false,
+                    "id": 17,
+                    "input": false,
+                    "inputPort": "0",
+                    "iterator": false,
+                    "name": "md1d_file",
+                    "output": true,
+                    "outputPort": "2b946f0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "oned_file",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "oned_file"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": false,
+                    "id": 18,
+                    "input": false,
+                    "inputPort": "0",
+                    "iterator": false,
+                    "name": "oned_file",
+                    "output": true,
+                    "outputPort": "48f0720",
+                    "value": "",
+                    "visible": true
+                },
+                {
+                    "base": "oned_matrix_save",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "oned_matrix_save"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": false,
+                    "id": 19,
+                    "input": false,
+                    "inputPort": "0",
+                    "iterator": false,
+                    "name": "oned_matrix_save",
+                    "output": true,
+                    "outputPort": "1bf4810",
+                    "value": "",
+                    "visible": false
+                }
+            ],
+            "position": [
+                -27,
+                -85
+            ],
+            "title": {
+                "code": [
+                    {
+                        "argument": {
+                            "import": "import nipype.interfaces.afni as afni",
+                            "name": "afni.Volreg()"
+                        },
+                        "comment": "Wraps command **3dvolreg**",
+                        "language": "Nipype"
+                    },
+                    {
+                        "argument": {
+                            "name": "Nipype, afni"
+                        },
+                        "language": "Docker"
+                    }
+                ],
+                "name": "afni.Volreg",
+                "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.afni/preprocess.html#volreg"
+            }
+        },
+        {
+            "category": [
+                "Nipype",
+                "io"
+            ],
+            "ports": [
+                {
+                    "base": "moco.moco_params",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "moco.moco_params"
+                            },
+                            "comment": "",
+                            "language": "Docker"
+                        },
+                        {
+                            "argument": {
+                                "name": "moco.moco_params"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 0,
+                    "input": true,
+                    "inputPort": "2b8f830",
+                    "iterator": false,
+                    "name": "moco.moco_params",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": true
+                },
+                {
+                    "base": "base_directory",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "base_directory"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 1,
+                    "input": true,
+                    "inputPort": "48c0e80",
+                    "iterator": false,
+                    "name": "base_directory",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "'/tmp'",
+                    "visible": true
+                },
+                {
+                    "base": "container",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "container"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 2,
+                    "input": true,
+                    "inputPort": "1ca97c0",
+                    "iterator": false,
+                    "name": "container",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": true
+                },
+                {
+                    "base": "parameterization",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "parameterization"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 3,
+                    "input": true,
+                    "inputPort": "2bf0860",
+                    "iterator": false,
+                    "name": "parameterization",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "strip_dir",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "strip_dir"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 4,
+                    "input": true,
+                    "inputPort": "1c8c600",
+                    "iterator": false,
+                    "name": "strip_dir",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "substitutions",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "substitutions"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 5,
+                    "input": true,
+                    "inputPort": "1c90560",
+                    "iterator": false,
+                    "name": "substitutions",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "regexp_substitutions",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "regexp_substitutions"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 6,
+                    "input": true,
+                    "inputPort": "280b970",
+                    "iterator": false,
+                    "name": "regexp_substitutions",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "_outputs",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "_outputs"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 7,
+                    "input": true,
+                    "inputPort": "1cb5050",
+                    "iterator": false,
+                    "name": "_outputs",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "remove_dest_dir",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "remove_dest_dir"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 8,
+                    "input": true,
+                    "inputPort": "1cb8380",
+                    "iterator": false,
+                    "name": "remove_dest_dir",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "creds_path",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "creds_path"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 9,
+                    "input": true,
+                    "inputPort": "1ea9240",
+                    "iterator": false,
+                    "name": "creds_path",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "encrypt_bucket_keys",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "encrypt_bucket_keys"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 10,
+                    "input": true,
+                    "inputPort": "2b80e10",
+                    "iterator": false,
+                    "name": "encrypt_bucket_keys",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "bucket",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "bucket"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 11,
+                    "input": true,
+                    "inputPort": "1ca2fe0",
+                    "iterator": false,
+                    "name": "bucket",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "local_copy",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "local_copy"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 12,
+                    "input": true,
+                    "inputPort": "1ca76b0",
+                    "iterator": false,
+                    "name": "local_copy",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "ignore_exception",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "ignore_exception"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": true,
+                    "id": 13,
+                    "input": true,
+                    "inputPort": "48ea860",
+                    "iterator": false,
+                    "name": "ignore_exception",
+                    "output": false,
+                    "outputPort": "0",
+                    "value": "",
+                    "visible": false
+                },
+                {
+                    "base": "out_file",
+                    "code": [
+                        {
+                            "argument": {
+                                "name": "out_file"
+                            },
+                            "comment": "",
+                            "language": "Nipype"
+                        }
+                    ],
+                    "editable": false,
+                    "id": 14,
+                    "input": false,
+                    "inputPort": "0",
+                    "iterator": false,
+                    "name": "out_file",
+                    "output": true,
+                    "outputPort": "1c84b90",
+                    "value": "",
+                    "visible": false
+                }
+            ],
+            "position": [
+                256,
+                164
+            ],
+            "title": {
+                "code": [
+                    {
+                        "argument": {
+                            "import": "import nipype.interfaces.io as io",
+                            "name": "io.DataSink()"
+                        },
+                        "comment": "Generic datasink module to store structured outputs",
+                        "language": "Nipype"
+                    },
+                    {
+                        "argument": {
+                            "name": "Nipype, io"
+                        },
+                        "language": "Docker"
+                    }
+                ],
+                "name": "io.DataSink",
+                "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#datasink"
+            }
+        }
+    ],
+    "parameters": [
+        {
+            "key": "WorkingDirectory",
+            "value": "\"~/Porcupipelines/ThisStudy\""
+        }
+    ],
+    "post-its": [
+    ],
+    "size": [
+        0,
+        0,
+        1274,
+        697
+    ]
+}
