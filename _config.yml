@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "PORCUPINE"
+title                    : "GiraffeTools"
 title_separator          : "-"
 name                     : "Tim van Mourik"
-description              : "PORcupine Creates Ur PipelINE"
-url                      : "https://timvanmourik.github.io"
-baseurl                  : "/Porcupine"
-repository               : TimVanMourik/Porcupine
+description              : "GiraffeTools Documentation"
+url                      : "https://giraffetools.github.io"
+baseurl                  : ""
+repository               : GiraffeTools/Documentation
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -72,14 +72,14 @@ social:
 analytics:
   provider               : google # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-116460525-1
+    tracking_id          : UA-116460525-5
 
 
 # Site Author
 author:
   name             : "Tim van Mourik"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "PhD Candidate at the Dondes Centre for Cognitive NeuroImaging"
+  bio              :
   location         : "Donders Institute Nijmegen"
   email            :
   uri              :
@@ -89,7 +89,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : TimVanMourik/Porcupine
+  github           : GiraffeTools
   google_plus      :
   keybase          :
   instagram        :

@@ -9,6 +9,6 @@ services:
     image: jekyll/jekyll
     volumes:
       - .:/srv/jekyll
-    command: jekyll serve --watch --drafts
+    command: jekyll serve --watch --drafts --incremental
     ports:
       - "4000:4000"   # webpack hot reload server
