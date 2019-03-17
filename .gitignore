@@ -1,0 +1,9 @@
+
+
+.sass-cache
+_site
+
+**/out/*
+**/graph*dot*
+**/MyWorkflow/*
+**/crash*
