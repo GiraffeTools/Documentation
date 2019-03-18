@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : "Tim van Mourik"
 description              : "GiraffeTools Documentation"
 url                      : "https://giraffetools.github.io"
-baseurl                  : ""
+baseurl                  : "/Documentation"
 repository               : GiraffeTools/Documentation
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)

@@ -7,3 +7,4 @@ _site
 **/graph*dot*
 **/MyWorkflow/*
 **/crash*
+.jekyll-metadata
