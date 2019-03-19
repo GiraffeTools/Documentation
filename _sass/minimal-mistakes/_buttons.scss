@@ -61,8 +61,10 @@
   /* light outline */
 
   &--light-outline {
-    border: 1px solid #aaa !important; /* override*/
-    background-color: transparent;
+    font-family: 'Nexa-Bold';
+    background-color: rgb(247, 168, 28);
+    color: white;
+    text-align: center;
   }
 
   /* information */

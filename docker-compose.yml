@@ -3,12 +3,12 @@ version: '3'
 services:
 
   web:
-    # environment:
-      # - CHOKIDAR_USEPOLLING=true # for hot reloading on Windows
+    environment:
+      - CHOKIDAR_USEPOLLING=true # for hot reloading on Windows
     build: .
     image: jekyll/jekyll
     volumes:
       - .:/srv/jekyll
-    command: jekyll serve --watch --drafts --incremental -P 4000 -H 0.0.0.0
+    command: bundle exec jekyll serve --livereload --watch --drafts --incremental -H 0.0.0.0
     ports:
       - "4000:4000"   # webpack hot reload server

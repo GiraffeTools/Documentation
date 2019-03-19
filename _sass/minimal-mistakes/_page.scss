@@ -136,13 +136,17 @@
           animation-delay: 0.25s;
 
   &--overlay {
+
     position: relative;
     margin-bottom: 2em;
     padding: 3em 0;
+      height: 25rem;
     @include clearfix;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right center;
+    background-color: rgb(253, 239, 214);
+    background-repeat: no-repeat;
     -webkit-animation: $intro-transition;
             animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
@@ -164,8 +168,8 @@
     .page__title,
     .page__meta,
     .btn {
-      color: #fff;
-      text-shadow: 1px 1px 5px rgba(#000, 0.8);
+      color: #000;
+      // text-shadow: 1px 1px 5px rgba(#000, 0.8);
     }
 
     .page__lead {
@@ -175,6 +179,7 @@
     }
 
     .page__title {
+      font-family: 'Nexa-Bold';
       font-size: $type-size-2;
 
       @include breakpoint($small) {
