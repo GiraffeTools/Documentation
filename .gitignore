@@ -8,3 +8,5 @@ _site
 **/MyWorkflow/*
 **/crash*
 .jekyll-metadata
+
+.DS_Store
