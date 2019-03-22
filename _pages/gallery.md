@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Gallery"
-permalink: /examples/
+permalink: /gallery/
 author_profile: false
 ---
 
@@ -12,7 +12,7 @@ check our instructions to contribute to our example gallery <span style="color:#
 In order to run the examples, make sure you have the lastest version of Nipype (0.14.0) installed!
 
 <div class="grid__wrapper">
-  {% for post in site.examples %}
+  {% for post in site.gallery %}
     {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>

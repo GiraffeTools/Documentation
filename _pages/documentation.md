@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Documentation"
-permalink: /documentation/
+permalink: /docs/
 author_profile: false
 ---
 
