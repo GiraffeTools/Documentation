@@ -1,31 +1,28 @@
 ---
-title: "The node editor"
-excerpt: "How to use the node editor"
+title: "The parameter editor"
+excerpt: "How to use the parameter editor"
 layout: single
 author_profile : false
 categories:
   - 1. Basics
-permalink: /documentation/basics/node-editor
+permalink: /documentation/basics/parameter-editor
 ---
 
-Every node in the workflow editor is also represented in the node editors.
-As shown in the screenshot below, each node in the workflow editor (here:
-`fsl.BET` and `fsl.FAST`) gets its own entry in the node editor.
+Every node in the workflow editor (here: `fsl.BET` and `io_DataSink`) 
+can be customised in the parameter editor.
 
 <figure>
 	<a href="{{ site.url }}{{ site.baseurl }}/documentation/images/node_editor1_edited.png"><img
     src="{{ site.url }}{{ site.baseurl }}/{{ example_path }}/documentation/images/node_editor1_edited.png"></a>
-	<figcaption>The "node editor" in Porcupine.</figcaption>
+	<figcaption>The "parameter editor" in Porcupine.</figcaption>
 </figure>
 
 ### Contents of entries in the node editor
 Each entry in the node editor consists of three parts:
 
-* the name of the node (which updates automatically when you edit the name in the workflow editor)
-* the URL to the documentation of the node/interface (e.g. the [Nipype documentation on `fsl.BET`](https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#bet))
-represented by the blue globe-icon
-* the blue arrow-icon, which expands the entry to show all of the node's input
-and output-ports
+* the name of the node
+* the URL to the documentation of the node/interface (e.g. the [Nipype documentation on `fsl.BET`](https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#bet)) represented by the blue globe-icon
+* all of the node's input and output-ports.
 
 When you press the expand-icon (blue arrow), you'll see all input-ports and
 output-ports, sorted by mandatory input-ports first, followed by optional input-ports,

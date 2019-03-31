@@ -1,14 +1,14 @@
----
-title: "The parameter editor"
-excerpt: "How to use the parameter editor"
-layout: single
-author_profile : false
-categories:
-  - 1. Basics
-permalink: /documentation/basics/parameter-editor
----
+# ---
+# title: "The parameter editor"
+# excerpt: "How to use the parameter editor"
+# layout: single
+# author_profile : false
+# categories:
+#   - 1. Basics
+# permalink: /documentation/basics/parameter-editor
+# ---
 
-On the upper right side of Porcupine's GUI, there is a small window we call
+<!-- On the upper right side of Porcupine's GUI, there is a small window we call
 the "parameter editor". This editor is basically a list of key-value pairs,
 in which the key (left column) represents the parameter name and the value (right column)
 represents, well, the parameter value.
@@ -44,4 +44,4 @@ and "tidy".
 Alright, the parameter editor concludes the documentation on the four editors
 that make up Porcupine's GUI. [The next section](/Porcupine/documentation/basics/saving-and-loading)
 shortly discusses how you can save and load Porcupine-pipelines and how to
-export your workflow editor as a PDF or SVG-image.
+export your workflow editor as a PDF or SVG-image. -->
