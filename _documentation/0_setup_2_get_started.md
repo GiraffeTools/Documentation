@@ -48,6 +48,16 @@ analysis pipeline. This project is also available at:
 	<figcaption>An active GiraffeTools project overview.</figcaption>
 </figure>
 
+Any changes you make can be saved to your GitHub repository via the `Save to GitHub` button
+underneath the node menu. A window will open allowing you to add an informative commit 
+message. 
+
+<figure>
+	<a href="{{ site.url }}{{ site.baseurl }}/documentation/images/save_to_github.png"><img
+    src="{{ site.url }}{{ site.baseurl }}/{{ example_path }}/documentation/images/save_to_github.png"></a>
+	<figcaption>Commit your changes directly to GitHub.</figcaption>
+</figure>
+
 In order to effectively use GiraffeTools, you have to understand the different windows 
 in GiraffeTools. In the figure below (click to enlarge), you see an 
 [example pipeline](https://giraffe.tools/porcupine/TimVanMourik/SomeGiraffeExample) 

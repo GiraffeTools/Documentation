@@ -50,7 +50,7 @@ Simply drag your node of choice into the workflow editor and reposition as you p
 ## Input-ports and output-ports
 Looking at, for example, the `fsl.BET` node, you see the name of the interface 
 (here "fsl.BET") at the top of the node. Below the name of the interface, the 
-node's "ports" (as we call them) are listed.Each port is either an input-port, 
+node's "ports" (as we call them) are listed. Each port is either an input-port, 
 recognizable by the little blue dot on the *left* side of the node, or an 
 output-port, recognizable by the little red dot on the *right* side of the node. 
 
@@ -76,12 +76,12 @@ which have a lot of output-ports.).
 
 ## Connecting nodes
 Now, suppose you've created a skull stripping node (`fsl.BET`) and a node to 
-save the results (`io_DataSink`) node, it's trivially easy to connect them. 
+save the results (`io_DataSink`), it's trivially easy to connect them. 
 Just click on an output-port and drag your cursor towards another node's
 input-port, which draws a line between the two ports. To save the results of our 
 skull stripping, we could for example connect the `out_file` output-port
 from the BET-node (representing the skullstripped structural file) with the
-`Bet_results` input-port from io_DataSink-node (representing the file(s) to be saved).
+`Bet_results` input-port from `io_DataSink` node (representing the file(s) to be saved).
 
 <figure>
 	<a href="{{ site.url }}{{ site.baseurl }}/documentation/images/connecting_nodes.gif"><img
