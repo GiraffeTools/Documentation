@@ -9,8 +9,8 @@ permalink: /documentation/setup/intro
 ---
 
 
-### Giraffe
-a Graphical Interface for Reproducible Analysis oF workFlow Experiments
+### GiraffeTools
+GiraffeTools is a **G**raphical **I**nterface for **R**eproducible **A**nalysis o**F** work**F**low **E**xperiments.
 
 GiraffeTools is software that allows you to create analysis pipelines visually
 using a drag-and-drop interface, which GiraffeTools then converts to code for you!
