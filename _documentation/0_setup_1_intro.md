@@ -1,5 +1,5 @@
 ---
-title: "Welcome to GiraffeTools"
+title: "Welcome to GiraffeTools!"
 excerpt: "What is GiraffeTools?"
 layout: single
 author_profile : false
@@ -15,6 +15,8 @@ GiraffeTools is a **G**raphical **I**nterface for **R**eproducible **A**nalysis 
 GiraffeTools is software that allows you to create analysis pipelines visually
 using a drag-and-drop interface, which GiraffeTools then converts to code for you!
 
+In this documentation we will try to walk you through all of the ins and outs of
+GiraffeTools. If anything is still unclear, please drop us a message!
 
 <!-- Want an image here? -->
 <!-- <figure>

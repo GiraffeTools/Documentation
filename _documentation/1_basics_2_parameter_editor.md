@@ -13,12 +13,12 @@ Below we can see each node in our skull stripping pipeline has been initialised,
 and we are ready to adjust the parameters of each node in the "parameter editor".
 
 <figure>
-	<a href="{{ site.url }}{{ site.baseurl }}/documentation/images/basic_nodes.png"><img src="{{ site.url }}{{ site.baseurl }}/{{ example_path }}/documentation/images/basic_nodes.png"></a><figcaption>The skeleton of the skull stripping pipeline.</figcaption>
+	<a href="{{ site.url }}{{ site.baseurl }}/documentation/images/basic_nodes.png"><img src="{{ site.url }}{{ site.baseurl }}/{{ example_path }}/documentation/images/basic_nodes.png"></a><figcaption>The skeleton of functions that are used in a skull stripping pipeline.</figcaption>
 </figure>
 
 
 ### Contents of entries in the node editor
-Clicking a node in the workflow editor opens the parameter editor. Here we can 
+Clicking a node in the workflow editor opens the parameter editor. Here we can
 see the three parts that make up each node:
 
 * the name of the node
@@ -46,7 +46,7 @@ editable. To visualize an input-port (e.g. `mask`), click on the eye-icon, which
 
 Note that whatever you write in a port's field should conform to the
 syntax/idiosyncrasies of the programming language of the framework you're using.
-Therfore, for Nipype-nodes, use Python syntax. For example, to input a list of 
+Therefore, for Nipype-nodes, use Python syntax. For example, to input a list of
 images, adhering to Python's syntax for constructing a list, you'd fill in something like:
 
 ```python

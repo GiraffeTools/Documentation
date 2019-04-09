@@ -32,11 +32,11 @@ package providing wrappers for all major neuroimaging software packages.
 
 ### Initializing nodes with the node menu
 To start building pipelines, you'll of course need some nodes!
-To initialize nodes, navigate through the [node menu](/GiraffeTools/documentation/basics/node-menu) 
+To initialize nodes, navigate through the [node menu](/GiraffeTools/documentation/basics/node-menu)
 on the left of GiraffeTools's GUI, which shows you all the Nipype-interfaces
 that GiraffeTools supports. Selecting, for example, `fsl` and, in turn, `preprocess`
-shows you all the available nodes from FSL's preprocessing suite (including the skull 
-stripping node from the image above, `fsl.BET`). 
+shows you all the available nodes from FSL's preprocessing suite (including the skull
+stripping node from the image above, `fsl.BET`).
 
 Simply drag your node of choice into the workflow editor and reposition as you please!
 
@@ -48,16 +48,16 @@ Simply drag your node of choice into the workflow editor and reposition as you p
 
 
 ## Input-ports and output-ports
-Looking at, for example, the `fsl.BET` node, you see the name of the interface 
-(here "fsl.BET") at the top of the node. Below the name of the interface, the 
-node's "ports" (as we call them) are listed. Each port is either an input-port, 
-recognizable by the little blue dot on the *left* side of the node, or an 
-output-port, recognizable by the little red dot on the *right* side of the node. 
+Looking at, for example, the `fsl.BET` node, you see the name of the interface
+(here "fsl.BET") at the top of the node. Below the name of the interface, the
+node's "ports" (as we call them) are listed. Each port is either an input-port,
+recognizable by the little blue dot on the *left* side of the node, or an
+output-port, recognizable by the little red dot on the *right* side of the node.
 
-In the screenshot of the FSL BET node below, for example, the `in_file` parameter 
-represents an input-port, while the `out_file`, `mask_file`, `outline_file`, etc., 
-represent the node's output-ports. (For Nipype-nodes, these input-ports correspond 
-to the `inputs` attribute/traits of nodes, and the output-ports correspond to the 
+In the screenshot of the FSL BET node below, for example, the `in_file` parameter
+represents an input-port, while the `out_file`, `mask_file`, `outline_file`, etc.,
+represent the node's output-ports. (For Nipype-nodes, these input-ports correspond
+to the `inputs` attribute/traits of nodes, and the output-ports correspond to the
 `outputs` attribute/traits.)
 
 <figure>
@@ -69,16 +69,16 @@ to the `inputs` attribute/traits of nodes, and the output-ports correspond to th
 Importantly, by default, the node *only* shows the **mandatory** input-ports,
 while it shows by default all output-ports. In the next section on the
 [parameter editor](/GiraffeTools/documentation/basics/parameter-editor),
-you'll learn how to customise nodes by changing the name (e.g. fsl.BET to Skullstripping), 
-accessing the node's non-mandatory input-ports and how to control which output ports are 
-shown and which are not (for example, to reduce the visual clutter in pipelines with nodes 
+you'll learn how to customise nodes by changing the name (e.g. fsl.BET to Skullstripping),
+accessing the node's non-mandatory input-ports and how to control which output ports are
+shown and which are not (for example, to reduce the visual clutter in pipelines with nodes
 which have a lot of output-ports.).
 
 ## Connecting nodes
-Now, suppose you've created a skull stripping node (`fsl.BET`) and a node to 
-save the results (`io_DataSink`), it's trivially easy to connect them. 
+Now, suppose you've created a skull stripping node (`fsl.BET`) and a node to
+save the results (`io_DataSink`), it's trivially easy to connect them.
 Just click on an output-port and drag your cursor towards another node's
-input-port, which draws a line between the two ports. To save the results of our 
+input-port, which draws a line between the two ports. To save the results of our
 skull stripping, we could for example connect the `out_file` output-port
 from the BET-node (representing the skullstripped structural file) with the
 `Bet_results` input-port from `io_DataSink` node (representing the file(s) to be saved).
@@ -92,4 +92,4 @@ from the BET-node (representing the skullstripped structural file) with the
 Now, there's more to building pipelines than initializing and connecting nodes.
 In the [next section on the parameter editor](/GiraffeTools/documentation/basics/parameter-editor),
 you'll learn how to control the functionality and visualization of your ports
-in more detail.
+in more detail!
