@@ -1,4 +1,4 @@
-{% if page.previous or page.next %}
+{% if page.previous or page.next or page.index %}
   <nav class="pagination">
     {% if page.previous %}
       <a href="{{ page.previous.url | absolute_url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
@@ -10,5 +10,8 @@
     {% else %}
       <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
     {% endif %}
+
+<a href="/Documentation/docs/" class="pagination--pager" title="Index">{{ site.data.ui-text[site.locale].pagination_index | default: "Index" }}</a>
+
   </nav>
 {% endif %}
