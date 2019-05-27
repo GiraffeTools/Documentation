@@ -20,10 +20,10 @@ pipeline using the workflow and node editor, notice how GiraffeTools creates you
 </figure>
 
 ### Generating Nipype-based Python scripts
-GiraffeTools creates a Python script under the Nipype-tab in the code editor. 
-In this script, all the necessary imports, initialization of nodes, connection 
+GiraffeTools creates a Python script under the Nipype-tab in the code editor.
+In this script, all the necessary imports, initialization of nodes, connection
 between nodes, and the actual call to execute the pipeline (or "workflow", in Nipype-terms) 
-are properly defined. In other words, you can just save the script as a Python-file 
+are properly defined. In other words, you can just save the script as a Python-file
 (e.g. `my_pipeline.py`) and run it in your terminal (i.e. `python my_pipeline.py`)!
 
 Of course, you can edit the script to your own liking before saving if you want!
@@ -45,7 +45,7 @@ in which you use ANTs for bias correction, AFNI for skullstripping, and
 FSL to threshold the brain-mask (like our [example pipeline](/Documentation/examples/skullstrip-example) based on a pipeline from the [niworkflows](https://github.com/poldracklab/niworkflows) package).
 Accordingly, GiraffeTools will then add the software packages ANTs, AFNI, and FSL (the "ingredients")
 to the Dockerfile, such that other people can evaluate your pipeline in a
-fully replicable environment specified in your Dockerfile! 
+fully replicable environment specified in your Dockerfile!
 
 For more information on GiraffeTools' Dockerfile generator, check out the
 section on [building dockerfiles]() in our documentation.

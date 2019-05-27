@@ -127,7 +127,7 @@
     display: block;
     padding: 1em 2em;
     float: left;
-    width: 50%;
+    width: 30%;
     font-family: $sans-serif;
     font-size: $type-size-5;
     font-weight: bold;
@@ -135,21 +135,21 @@
     text-decoration: none;
     color: $link-color;
     border: 1px solid $light-gray;
-    border-radius: $border-radius;
 
     &:hover {
       color: $link-color-hover;
     }
 
     &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
+      margin-right: -1px;
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
     }
 
     &:last-child {
       margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
     }
 
     &.disabled {

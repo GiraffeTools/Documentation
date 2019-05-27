@@ -9,7 +9,7 @@
 locale                   : "en"
 title                    : "GiraffeTools"
 title_separator          : "-"
-name                     : "Tim van Mourik"
+name                     : "Tim van Mourik, Oliver Warrington"
 description              : "GiraffeTools Documentation"
 url                      : "https://giraffetools.github.io"
 baseurl                  : "/Documentation"
