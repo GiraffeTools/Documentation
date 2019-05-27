@@ -2,6 +2,9 @@
   {% include tag-list.html %}
 {% endif %}
 
-{% if site.category_archive.type and page.categories[0] %}
+<!-- TvM: commenting out the category links because links are broken -->
+{% if site.category_archive.type and page.categories[0]
+  and false
+%}
   {% include category-list.html %}
 {% endif %}
