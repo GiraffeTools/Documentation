@@ -18,7 +18,7 @@ your pipeline and draw connections between them. In the basics section of this d
 	<figcaption>The "workflow editor" in GiraffeTools.</figcaption>
 </figure>
 
-You can have at a look at the pipeline [here](https://giraffe.tools/porcupine/TimVanMourik/skullstrip-tutorial) or check out the code in the [GitHub repository](https://github.com/TimVanMourik/skullstrip-tutorial)
+You can have at a look at the pipeline [here](https://giraffe.tools/porcupine/TimVanMourik/skullstrip-tutorial/first-nodes) or check out the code in the [GitHub repository](https://github.com/TimVanMourik/skullstrip-tutorial/tree/first-nodes). The code for this example can be found in the `first-nodes` branch.
 
 ### Nodes in GiraffeTools
 When you open [GiraffeTools](https://giraffe.tools/porcupine), you'll start with an empty workflow editor. To begin
@@ -77,13 +77,12 @@ shown and which are not (for example, to reduce the visual clutter in pipelines 
 which have a lot of output-ports.).
 
 ## Connecting nodes
-Now, suppose you've created a skull stripping node (`fsl.BET`) and a node to
-save the results (`io_DataSink`), it's trivially easy to connect them.
+Now, suppose you've created a skull stripping node (`fsl.BET`) and a node to perform 'linear image regisration' (`fsl.flirt`), it's trivially easy to connect them.
 Just click on an output-port and drag your cursor towards another node's
-input-port, which draws a line between the two ports. To save the results of our
+input-port, which draws a line between the two ports. To use the results of our
 skull stripping, we could for example connect the `out_file` output-port
 from the BET-node (representing the skullstripped structural file) with the
-`Bet_results` input-port from `io_DataSink` node (representing the file(s) to be saved).
+`in_file` input-port from the `fsl.flirt` node (representing the file to be used for image registration).
 
 <figure>
 	<a href="{{ site.url }}{{ site.baseurl }}/documentation/images/connecting_nodes.gif"><img
