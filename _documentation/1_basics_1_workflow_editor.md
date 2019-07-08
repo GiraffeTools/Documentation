@@ -18,9 +18,11 @@ your pipeline and draw connections between them. In the basics section of this d
 	<figcaption>The "workflow editor" in GiraffeTools.</figcaption>
 </figure>
 
+You can have at a look at the pipeline [here](https://giraffe.tools/porcupine/TimVanMourik/skullstrip-tutorial) or check out the code in the [GitHub repository](https://github.com/TimVanMourik/skullstrip-tutorial)
+
 ### Nodes in GiraffeTools
-When you open GiraffeTools, you'll start with an empty workflow editor. To begin
-building your pipeline, you'll have to initialize some nodes. A "node" represents
+When you open [GiraffeTools](https://giraffe.tools/porcupine), you'll start with an empty workflow editor. To begin
+building your pipeline, you'll have to drag in some nodes. A "node" represents
 a specific operation within your pipeline, ranging from neuroscience-specific
 operations like skullstripping or motion-correction to more generic operations
 like file I/O.
